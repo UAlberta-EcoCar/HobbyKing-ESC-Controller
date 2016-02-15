@@ -14946,11 +14946,12 @@ Source: ENG_CD_1445055_A.pdf</description>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND@1"/>
 <wire x1="17.78" y1="96.52" x2="15.24" y2="96.52" width="0.1524" layer="91"/>
+<label x="12.7" y="96.52" size="1.778" layer="95"/>
 <pinref part="U2" gate="G$1" pin="GND@2"/>
+<wire x1="15.24" y1="96.52" x2="12.7" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="93.98" x2="15.24" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="93.98" x2="15.24" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="96.52" x2="12.7" y2="96.52" width="0.1524" layer="91"/>
-<label x="12.7" y="96.52" size="1.778" layer="95"/>
+<junction x="15.24" y="96.52"/>
 </segment>
 <segment>
 <wire x1="104.14" y1="58.42" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
@@ -15035,11 +15036,12 @@ Source: ENG_CD_1445055_A.pdf</description>
 <segment>
 <pinref part="U2" gate="G$1" pin="AVCC"/>
 <wire x1="17.78" y1="144.78" x2="15.24" y2="144.78" width="0.1524" layer="91"/>
+<label x="10.16" y="144.78" size="1.778" layer="95"/>
 <pinref part="U2" gate="G$1" pin="VCC"/>
+<wire x1="15.24" y1="144.78" x2="12.7" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="142.24" x2="15.24" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="142.24" x2="15.24" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="144.78" x2="12.7" y2="144.78" width="0.1524" layer="91"/>
-<label x="10.16" y="144.78" size="1.778" layer="95"/>
+<junction x="15.24" y="144.78"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="58.42" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
@@ -15327,12 +15329,6 @@ Source: ENG_CD_1445055_A.pdf</description>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="PWR" gate="G$1" pin="C"/>
 <wire x1="0" y1="73.66" x2="0" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="CEN2" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="PB0(ICP)"/>
-<wire x1="66.04" y1="104.14" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ESC_SIG" class="0">
