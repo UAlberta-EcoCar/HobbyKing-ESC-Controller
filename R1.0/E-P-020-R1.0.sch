@@ -14768,27 +14768,27 @@ Source: ENG_CD_1445055_A.pdf</description>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device="NO_PACKAGE"/>
 <part name="U$1" library="Microchip_By_element14_Batch_1" deviceset="MCP2515-I/SO" device=""/>
 <part name="U$2" library="Microchip_By_element14_Batch_1" deviceset="MCP2551-E/P" device=""/>
-<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="U$3" library="mylibrary" deviceset="CRYSTAL" device=""/>
-<part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
-<part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
+<part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="18pf"/>
+<part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="18pf"/>
 <part name="U$4" library="mylibrary" deviceset="CRYSTAL" device=""/>
-<part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
-<part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
-<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="18pf"/>
+<part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="18pf"/>
+<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="FTDI_DEVICE" device=""/>
 <part name="SPI" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="2X3_LOCK"/>
 <part name="U$7" library="E-P-099-R2.2" deviceset="PUSH_BUTTON" device=""/>
-<part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
-<part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uf"/>
+<part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
 <part name="PWR" library="E-P-099-R2.2" deviceset="LED" device="CHIPLED_1206"/>
-<part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="U2" library="SparkFun-DigitalIC" deviceset="ATMEGA328P_PDIP" device=""/>
-<part name="R7" library="adafruit" deviceset="R-US_" device="M1206"/>
+<part name="R7" library="adafruit" deviceset="R-US_" device="M1206" value="120"/>
 <part name="R8" library="SparkFun-Resistors" deviceset="0.75OHM-1/4W-1%(0805)" device="" value="680R"/>
 <part name="R9" library="SparkFun-Resistors" deviceset="0.75OHM-1/4W-1%(0805)" device="" value="680R"/>
 <part name="R10" library="SparkFun-Resistors" deviceset="0.75OHM-1/4W-1%(0805)" device="" value="680R"/>
@@ -14799,18 +14799,19 @@ Source: ENG_CD_1445055_A.pdf</description>
 <part name="CN1" library="adafruit" deviceset="1X4" device="-CLEANBIG"/>
 <part name="J1" library="con-amp" deviceset="1445055-3" device=""/>
 <part name="3.3V_REG" library="mylibrary" deviceset="MCP1702" device=""/>
-<part name="C8" library="adafruit" deviceset="C-US" device="C0805"/>
-<part name="C9" library="adafruit" deviceset="C-US" device="C0805"/>
+<part name="C8" library="adafruit" deviceset="C-US" device="C0805" value="10uf"/>
+<part name="C9" library="adafruit" deviceset="C-US" device="C0805" value="0.1uf"/>
 <part name="LED1" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="LED2" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="LED3" library="adafruit" deviceset="LED" device="SMT1206"/>
-<part name="R11" library="E-P-099-R2.2" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R12" library="E-P-099-R2.2" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R13" library="E-P-099-R2.2" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R11" library="E-P-099-R2.2" deviceset="RESISTOR" device="0805-RES" value="1k"/>
+<part name="R12" library="E-P-099-R2.2" deviceset="RESISTOR" device="0805-RES" value="1k"/>
+<part name="R13" library="E-P-099-R2.2" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="182.88" y="66.04" size="1.778" layer="91">These aren't used</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-15.24" y="-15.24"/>
@@ -14830,10 +14831,10 @@ Source: ENG_CD_1445055_A.pdf</description>
 <instance part="U$7" gate="G$1" x="-5.08" y="154.94"/>
 <instance part="C5" gate="G$1" x="5.08" y="149.86" rot="R90"/>
 <instance part="R3" gate="G$1" x="12.7" y="157.48" rot="R180"/>
-<instance part="R4" gate="G$1" x="180.34" y="111.76" rot="R90"/>
-<instance part="R5" gate="G$1" x="190.5" y="111.76" rot="R90"/>
-<instance part="C6" gate="G$1" x="180.34" y="101.6"/>
-<instance part="C7" gate="G$1" x="190.5" y="101.6"/>
+<instance part="R4" gate="G$1" x="187.96" y="71.12" rot="R90"/>
+<instance part="R5" gate="G$1" x="198.12" y="71.12" rot="R90"/>
+<instance part="C6" gate="G$1" x="187.96" y="58.42"/>
+<instance part="C7" gate="G$1" x="198.12" y="60.96"/>
 <instance part="PWR" gate="G$1" x="0" y="78.74"/>
 <instance part="R6" gate="G$1" x="0" y="66.04" rot="R90"/>
 <instance part="U2" gate="G$1" x="40.64" y="124.46"/>
@@ -14937,11 +14938,11 @@ Source: ENG_CD_1445055_A.pdf</description>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="180.34" y1="99.06" x2="180.34" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="55.88" x2="187.96" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="180.34" y1="93.98" x2="190.5" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="93.98" x2="190.5" y2="99.06" width="0.1524" layer="91"/>
-<label x="182.88" y="93.98" size="1.778" layer="95"/>
+<wire x1="187.96" y1="53.34" x2="198.12" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="53.34" x2="198.12" y2="58.42" width="0.1524" layer="91"/>
+<label x="190.5" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND@1"/>
@@ -15151,8 +15152,8 @@ Source: ENG_CD_1445055_A.pdf</description>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="190.5" y1="116.84" x2="190.5" y2="121.92" width="0.1524" layer="91"/>
-<label x="190.5" y="116.84" size="1.778" layer="95" rot="R90"/>
+<wire x1="198.12" y1="76.2" x2="198.12" y2="81.28" width="0.1524" layer="91"/>
+<label x="198.12" y="76.2" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="CANH" class="0">
@@ -15169,8 +15170,8 @@ Source: ENG_CD_1445055_A.pdf</description>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="180.34" y1="116.84" x2="180.34" y2="121.92" width="0.1524" layer="91"/>
-<label x="180.34" y="116.84" size="1.778" layer="95" rot="R90"/>
+<wire x1="187.96" y1="76.2" x2="187.96" y2="81.28" width="0.1524" layer="91"/>
+<label x="187.96" y="76.2" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -15316,6 +15317,7 @@ Source: ENG_CD_1445055_A.pdf</description>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="187.96" y1="63.5" x2="187.96" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
