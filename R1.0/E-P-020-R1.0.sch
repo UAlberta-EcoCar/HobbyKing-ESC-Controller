@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14780,7 +14780,7 @@ Source: ENG_CD_1445055_A.pdf</description>
 <part name="SPI" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="2X3_LOCK"/>
 <part name="U$7" library="E-P-099-R2.2" deviceset="PUSH_BUTTON" device=""/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uf"/>
-<part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1k"/>
+<part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
