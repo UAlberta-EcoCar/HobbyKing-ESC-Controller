@@ -15,6 +15,15 @@ can_msg::MsgEncode brake_msg( can_msg::UINT16, can_msg::MOTOR, can_msg::BRAKE, c
 
 Servo esc; //create servo object
 #define servo_pin 5
+int enc1 = 2; //set hall effect 1 signal to arduino pin 2
+int enc2 = 3; //set hall effect 2 signal to arduino pin 3
+int enc3 = 4; //set hall effect 3 signal to arduino pin 4
+
+int enc1_Val = 0; //create a variable to hold encoder values
+int enc2_Val = 0;
+int enc3_Val = 0;
+
+int BR = 115200; //set Baud Rate
 
 void arm_esc(void)
 {
@@ -30,7 +39,7 @@ void arm_esc(void)
 
 void setup() {
   // put your setup code here, to run once:
-  Serial.begin(115200);
+  Serial.begin(BR);
   while (!Serial);
 
   // Initialize CAN
@@ -41,11 +50,15 @@ void setup() {
   }
   Serial.println("mcp2515 initialization successful");
 
-  pinMode(A0,OUTPUT);
-  pinMode(A1,OUTPUT);
-  pinMode(A2,OUTPUT);
+//  pinMode(A0,OUTPUT); //initialise LED's (to test)
+//  pinMode(A1,OUTPUT);
+//  pinMode(A2,OUTPUT);
   // Short delay and then begin communication
   delay(2000);
+
+  pinMode(enc1, INPUT); //initialise encoder inputs
+  pinMode(enc2, INPUT);
+  pinMode(enc3, INPUT);
 
   esc.attach(servo_pin);
   arm_esc();
@@ -59,6 +72,10 @@ unsigned int brake;
 
 void loop() 
 { 
+  enc1_Val = digitalRead(enc1);
+  enc2_Val = digitalRead(enc2);
+  enc3_Val = digitalRead(enc3);
+  
   CanMessage message; //make a new message object
   if(digitalRead(9) == 0) //If there was a "message received interrupt" (happy mike?)
   {
